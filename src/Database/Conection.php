@@ -1,5 +1,6 @@
 <?php
 
+namespace App\src;
 //salva as credenciais de acesso ao banco
 try {
     $host = "localhost";
@@ -8,10 +9,10 @@ try {
     $dbname = "notebook";
 
     //cria o PDO
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
 
     //define como possiveis erros serão relatados
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     //verifica se a conexão funcinou ou não
     echo "Connected sucessfully";
