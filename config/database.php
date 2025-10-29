@@ -1,17 +1,9 @@
 <?php
 
 namespace App\config;
-use App\src;
-use PDO;
-
+use function App\src\connect;
 class Database
 {
-    private $pdo;
-
-    public function __construct($pdo)
-    {
-        $this->pdo = $pdo;
-    }
     function buscar($pdo, $tabela)
     {
         $sql = "SELECT * FROM $tabela";
@@ -36,7 +28,7 @@ class Database
         return $stmt -> fetchAll(PDO::FETCH_ASSOC);
     }
 
-    function login($pdo, $tabela, $email, $senha)
+    function Login($pdo, $tabela, $email, $senha)
     {
         $sql = "SELECT * FROM $tabela WHERE email = '$email' AND senha = '$senha'";
         $stmt = $pdo -> prepare($sql);
