@@ -1,10 +1,24 @@
 {
-  "name": "bellos_backend",
+  "name": "bellos/backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "private": true,
+  "autoload": {
+    "files": [
+        "src/Database/Conection.php"
+    ],
+    "psr-4": {
+      "App\\": "src/",
+      "App\\config\\": "config/"
+    }
+  },
+  "require": {
+    "ext-pdo": "*",
+    "ext-pdo_mysql": "*",
+    "ext-openssl": "*"
+  }
 }

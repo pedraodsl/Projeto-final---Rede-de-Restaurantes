@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bellor Restaurante | Site Oficial</title>
+<link rel="stylesheet" href="Home/cabecalho.css">
+<link rel="icon" type="image/png" href="img/Logo.titulo.png">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a href="Home/index.html" class="logo">
+      <img src="Home/img/Logo.png" class="logo-tipo" alt="Logo Bellor">
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="Home/index.html" class="active">Home</a></li>
+     <form action="/reserva" method="POST">Reserva
+         <button type="submit"></button>
+     </form>
+        <form action="/menu" method="GET">Menu
+            <button type="submit"></button>
+        </form>
+     <form action="/projeto" method="POST">Projeto
+         <button type="submit"></button>
+     </form>
+     <form action="/avaliacao" method="POST">Projeto
+        <button type="submit"></button>
+     </form>
+    <li><a href="/sobre">Sobre nós</a></li>
+    </ul>
+
+    <div class="right-section">
+       <form action="/login" method="POST">
+           <button type="submit"></button>
+       </form>
+      <label class="switch">
+        <input type="checkbox" id="modo-btn">
+        <span class="slider"></span>
+      </label>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </nav>
+</header>
+
+
+<main>
+    <!-- Seção principal -->
+  <section class="restaurante1">
+  <img src="Home/img/home1.png" alt="">
+    <div class="container1">
+      <p>De norte a sul, o Bellor está presente nos cantinhos mais encantadores do país, levando a autenticidade da gastronomia brasileira com um toque especial de sofisticação. Seja à beira-mar, no coração das grandes cidades ou em refúgios tranquilos cheios de história, nossos restaurantes celebram a beleza e a diversidade do Brasil. Onde quer que você esteja, há um Bellor pronto para te receber com pratos memoráveis, ambientes acolhedores e experiências que ficam na memória.</p>
+      <button class="botao">RESERVA DE MESAS</button>
+    </div>
+  </section>
+
+  <!-- Seção Restaurantes -->
+  <section class="restaurantes">
+  <div class="container2">
+    <h2>NOSSOS RESTAURANTES</h2>
+
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="Home/img/r1.png" alt="Restaurante 1">
+        <img src="Home/img/r2.png" alt="Restaurante 2">
+        <img src="Home/img/r3.png" alt="Restaurante 3">
+        <img src="Home/img/r4.png" alt="Restaurante 4">
+      </div>
+
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Seção História -->
+  <section class="historia">
+    <div class="container historia-conteudo">
+      <div class="historia-img">
+        <img src="Home/img/restaurante.jpg" alt="">
+      </div>
+      <div class="historia-texto">
+        <h3>DESCUBRA<br><span>Nossa História</span></h3>
+        <p>Nem todo restaurante nasce apenas de um sonho. Alguns nascem de promessas, encontros improváveis e receitas guardadas por gerações. Dizem que o primeiro prato servido no Bellor não estava no cardápio — foi feito às pressas, com o que havia em mãos, mas encantou tanto que até hoje inspira nossa cozinha.</p>
+        <p>Cada detalhe do Bellor carrega um segredo: da escolha dos ingredientes às cores das paredes.</p>
+        <button class="botao">Saiba mais</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Conhecendo o Bellor -->
+  <section class="conhecendo">
+    <div class="container3">
+      <h5>CONHECENDO O BELLOR</h5>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">
+            <img src="Home/img/g8.png" alt="">
+          </div>
+          <h4>MENU</h4>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="home/img/g10.png" alt="">
+          </div>
+          <h4>LOCALIZAÇÃO</h4>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="Home/img/g9.png" alt="">
+          </div>
+          <h4>RANKING DO CLIENTE</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Galeria -->
+  <section class="galeria">
+    <div class="container">
+      <h3>Descobrindo<br><span>NOSSA GALERIA</span></h3>
+      <div class="grid-galeria">
+        <div class="img">
+          <img src="Home/img/g1.png" alt="">
+        </div>
+        <div class="img">
+          <img src="Home/img/g2.png" alt="">
+        </div>
+        <div class="img">
+          <img src="Home/img/g3.png" alt="">
+        </div>
+        <div class="img">
+          <img src="Home/img/g4.png" alt="">
+        </div>
+        <div class="img">
+          <img src="Home/img/g5.png" alt="">
+        </div>
+        <div class="img">
+          <img src="Home/img/g6.png" alt="">
+        </div>
+        <div class="img">
+          <img src="Home/img/g7.png" alt="">
+        </div>
+        <div class="img">
+          <img src="Home/img/g8.png" alt="">
+        </div>
+      </div>
+      <button class="botao">Veja mais...</button>
+    </div>
+  </section>
+
+</body>
+</html>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- RODAPÉ -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <a href="Home/index.html" class="footer-logo">
+        <img src="Home/img/Logo grande.png" alt="Logo Bellor">
+      </a>
+      <p><a href="mailto:restaurantes@bellor.com.br">restaurantes@bellor.com.br</a></p>
+      <p><a href="tel:+5577998793159">(77) 99879-3159</a></p>
+      <div class="social-icons">
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="Home/img/logo-instagram.png" alt="Instagram">
+  </a>
+  <a href="https://x.com" target="_blank">
+    <img src="Home/img/logo-twitter.png" alt="Twitter">
+  </a>
+  <a href="https://www.facebook.com" target="_blank">
+    <img src="Home/img/logo-facebook.png" alt="Facebook">
+  </a>
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="Home/index.html">Home</a></li>
+        <li><a href="../src/Controller/Templates/Menu/menu.html">Cardápio</a></li>
+        <li><a href="../src/Controller/Templates/projeto/projeto.html">Projetos sociais</a></li>
+        <li><a href="../src/Controller/Templates/Avaliação/avaliacoes.html">Avaliações</a></li>
+        <li><a href="../src/Controller/Templates/Sobre-nos/sobre.html">Sobre nós</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Localizações</h4>
+      <ul>
+        <li><a href="#">Guanambi - BA</a></li>
+        <li><a href="#">Salvador - BA</a></li>
+        <li><a href="#">Fortaleza - CE</a></li>
+        <li><a href="#">São Paulo - SP</a></li>
+        <li><a href="#">Rio de Janeiro - RJ</a></li>
+        <li><a href="#">Belo Horizonte - MG</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Atendimento</h4>
+      <ul>
+        <li><a href="../Reservas/reservas.html">Faça seu pedido</a></li>
+        <li><a href="../Menu/menu.html">Faça sua reserva</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Bellor Restaurante. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="Home/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* EXATAMENTE IGUAL AO SEU admin.css */
+.dashboard-container{display:flex;min-height:100vh;background:#f4f6f9}
+.sidebar{width:280px;background:#680505;color:white;position:fixed;top:0;bottom:0;left:0;overflow-y:auto;padding-top:1.5rem;z-index:999}
+.sidebar-header{padding:2rem 1.5rem;text-align:center;border-bottom:1px solid #950707}
+.sidebar-logo{width:80px;margin-bottom:.5rem}
+.sidebar-nav ul{list-style:none;padding:0;margin:1rem 0}
+.sidebar-nav a{display:flex;align-items:center;padding:1rem 1.5rem;color:white;text-decoration:none;transition:.3s}
+.sidebar-nav a:hover,.sidebar-nav a.active{background:#950707}
+.sidebar-nav i{margin-right:10px;width:20px}
+.main-content{margin-left:280px;padding:2rem;flex:1;padding-top:2rem}
+.section{display:none;animation:fadeIn .6s ease}
+.section.active{display:block}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+.card{background:white;padding:1.5rem;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.08);margin-bottom:1.5rem}
+.actions-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem}
+.filter-group{display:flex;gap:.5rem;align-items:center}
+.filter-group input{padding:.6rem;border:1px solid #ddd;border-radius:8px}
+.btn-primary{background:#680505;color:white;border:none;padding:.8rem 1.5rem;border-radius:8px;cursor:pointer;font-weight:bold}
+.btn-secondary{background:#f8f9fa;border:1px solid #ddd;color:#333;padding:.6rem 1rem;border-radius:8px;cursor:pointer}
+
+.table{width:100%;border-collapse:collapse}
+.table th{background:#680505;color:white;padding:1rem;text-align:left}
+.table td{padding:1rem;border-bottom:1px solid #eee;vertical-align:middle}
+.table tbody tr:hover{background:#fff5f5}
+
+.mesa-badge{background:#680505;color:white;padding:6px 14px;border-radius:50px;font-size:13px;font-weight:bold}
+.btn-edit{background:#28a745;color:white;border:none;padding:6px 12px;border-radius:6px;font-size:13px;cursor:pointer}
+.btn-delete{background:#dc3545;color:white;border:none;padding:6px 12px;border-radius:6px;font-size:13px;cursor:pointer;margin-left:6px}
+
+.chart-card h3{margin:0 0 1rem 0;color:#680505;font-weight:bold}
+#graficoSemanas{height:320px!important}
+
+.modal{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.6);backdrop-filter:blur(5px);align-items:center;justify-content:center}
+.modal-content{background:white;margin:auto;padding:2rem;width:90%;max-width:500px;border-radius:20px;position:relative}
+.close{float:right;font-size:2rem;cursor:pointer;color:#aaa}
+.close:hover{color:#000}
+#formReserva{display:flex;flex-direction:column;gap:1rem}
+#formReserva input,#formReserva select{padding:.8rem;border:1px solid #ddd;border-radius:12px}

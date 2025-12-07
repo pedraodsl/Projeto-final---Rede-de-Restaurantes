@@ -1,0 +1,282 @@
+/* CSS ESPECÍFICO PARA PÁGINA DE RESERVAS */
+
+/* Reset e configurações gerais da página de reservas */
+body.pagina-reservas {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f5f1ed;
+  min-height: 100vh;
+}
+
+/* Seção principal de reservas */
+.secao-reservas-bellor {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-image: url('img/fundo-restaurante.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Overlay escuro sobre o fundo */
+.secao-reservas-bellor::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(58, 0, 8);
+  z-index: 1;
+}
+
+/* Container do conteúdo de reservas */
+.container-reservas-bellor {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho da seção de reservas */
+.cabecalho-reservas-bellor {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.titulo-reservas-bellor {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+.subtitulo-reservas-bellor {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.95;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Card do formulário de reservas */
+.card-formulario-reservas {
+  background-color: #f5f1ed;
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulário de reservas */
+.formulario-reservas-bellor {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Grupo de campo individual */
+.grupo-campo-reserva {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Labels dos campos */
+.label-reserva-bellor {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3d2416;
+  letter-spacing: 0.5px;
+}
+
+/* Inputs de texto gerais */
+.input-reserva-texto,
+.input-reserva-telefone,
+.input-reserva-email,
+.input-reserva-data,
+.input-reserva-horario {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #d4c5b9;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-reserva-texto:focus,
+.input-reserva-telefone:focus,
+.input-reserva-email:focus,
+.input-reserva-data:focus,
+.input-reserva-horario:focus {
+  outline: none;
+  border-color: #8b6f47;
+  box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.1);
+}
+
+.input-reserva-texto::placeholder,
+.input-reserva-telefone::placeholder,
+.input-reserva-email::placeholder,
+.input-reserva-data::placeholder,
+.input-reserva-horario::placeholder {
+  color: #a89888;
+  font-style: italic;
+}
+
+/* Selects (Localização e Número de Pessoas) */
+.select-reserva-localizacao,
+.select-reserva-pessoas {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #d4c5b9;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%233d2416' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 12px;
+  padding-right: 45px;
+}
+
+.select-reserva-localizacao:focus,
+.select-reserva-pessoas:focus {
+  outline: none;
+  border-color: #8b6f47;
+  box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.1);
+}
+
+/* Textarea para mensagem opcional */
+.textarea-reserva-mensagem {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #d4c5b9;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  resize: vertical;
+  min-height: 100px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.textarea-reserva-mensagem:focus {
+  outline: none;
+  border-color: #8b6f47;
+  box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.1);
+}
+
+.textarea-reserva-mensagem::placeholder {
+  color: #a89888;
+  font-style: italic;
+}
+
+/* Container para campos lado a lado */
+.linha-campos-reserva {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Botão de confirmar reserva */
+.botao-confirmar-reserva {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto 0;
+  padding: 16px 40px;
+  background-color: rgb(58, 0, 8);;
+  color: #f5f1ed;
+  border: 2px solid rgb(58, 0, 8);;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  display: block;
+}
+
+.botao-confirmar-reserva:hover {
+  background-color: #f5f1ed;
+  color: rgb(58, 0, 8);;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(61, 36, 22, 0.3);
+}
+
+.botao-confirmar-reserva:active {
+  transform: translateY(0);
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .titulo-reservas-bellor {
+    font-size: 2.2rem;
+  }
+
+  .subtitulo-reservas-bellor {
+    font-size: 1rem;
+  }
+
+  .card-formulario-reservas {
+    padding: 35px 25px;
+  }
+
+  .linha-campos-reserva {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 480px) {
+  .secao-reservas-bellor {
+    padding: 20px 15px;
+  }
+
+  .titulo-reservas-bellor {
+    font-size: 1.8rem;
+  }
+
+  .subtitulo-reservas-bellor {
+    font-size: 0.9rem;
+  }
+
+  .card-formulario-reservas {
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  .input-reserva-texto,
+  .input-reserva-telefone,
+  .input-reserva-email,
+  .input-reserva-data,
+  .input-reserva-horario,
+  .select-reserva-localizacao,
+  .select-reserva-pessoas {
+    padding: 12px 16px;
+    font-size: 0.95rem;
+  }
+
+  .botao-confirmar-reserva {
+    font-size: 1rem;
+    padding: 14px 30px;
+  }
+}

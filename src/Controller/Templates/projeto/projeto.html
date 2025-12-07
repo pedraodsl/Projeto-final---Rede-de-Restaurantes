@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bellor Restaurante | Site Oficial</title>
+  <link rel="stylesheet" href="projeto/projeto.css">
+  <link rel="icon" type="image/png" href="projeto/img/Logo.titulo.png">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="../src/Controller/Templates/Home/index.html" class="logo">
+        <img src="img/Logo.png" class="logo-tipo" alt="Logo Bellor">
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../src/Controller/Templates/Homeindex.html">Home</a></li>
+        <li><a href="../src/Controller/Templates/Reservas/reservas.html">Reservas</a></li>
+        <li><a href="../src/Controller/Templates/Menu/menu.html">Menu</a></li>
+        <li><a href="../src/Controller/Templates/projeto/projeto.html" class="active">Projeto</a></li>
+        <li><a href="../src/Controller/Templates/Avaliação/avaliacoes.html">Avaliações</a></li>
+        <li><a href="../src/Controller/Templates/Sobre-nos/sobre.html">Sobre nós</a></li>
+      </ul>
+
+      <div class="right-section">
+        <a href="../src/Controller/Templates/Pagina-login/login.html" class="login">
+          <img src="../src/Controller/Templates/Pagina-login/img/user.png" class="login" alt="Login">
+        </a>
+        <label class="switch">
+          <input type="checkbox" id="modo-btn">
+          <span class="slider"></span>
+        </label>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+      </div>
+    </nav>
+  </header>
+
+
+  <main style="
+  background-image: linear-gradient(rgba(0,0,0,0.4),  rgba(0,0,0,0.4)), url('marmita.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 40px;
+">
+
+    <section class="max-w-5xl mx-auto text-center mb-12">
+      <p style="text-align: center; font-size:23px; color:#faeee3;" class="text-lg leading-relaxed">
+        Nosso projeto nasceu com o objetivo de unir boa comida e solidariedade.
+        Através de nossa rede de restaurantes, buscamos criar um impacto positivo, oferecendo refeições de qualidade e
+        oportunidades para quem mais precisa.
+      </p>
+      <div class="my-8">
+      </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto mb-12">
+      <h2 style="text-align: center;color:#eccbab;" class="text-3xl font-semibold mb-4 text-center">Por que o projeto
+        surgiu?</h2>
+
+      <p style="text-align: center; font-size:21px; color:#faeee3;" class="text-lg leading-relaxed">
+        A ideia surgiu durante o aumento da insegurança alimentar nas grandes cidades.
+        Muitos restaurantes da nossa rede buscavam uma forma de contribuir com a sociedade,
+        e percebemos que nossos clientes também tinham esse desejo de ajudar.
+        Assim, criamos um sistema simples e transparente de doações.
+      </p>
+      <div class="my-8">
+      </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto mb-12">
+      <h2 style="text-align: center;color:#eccbab;" class="text-3xl font-semibold mb-4 text-center">Como o projeto
+        funciona</h2>
+      <p style="text-align: center; font-size:21px; color:#faeee3;" class="text-lg leading-relaxed">
+        Ao realizar uma doação, o cliente recebe automaticamente um desconto especial
+        que pode ser usado em nossa rede, em qualquer momento.
+        O valor arrecadado é convertido em marmitas e distribuído para pessoas em
+        situação de rua, garantindo que cada contribuição se transforme em um prato
+        de comida quente e digno.
+      </p>
+      <div class="my-8">
+      </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto text-center mb-12">
+      <h2 style="text-align: center;color:#eccbab;" class="text-3xl font-semibold mb-4">Faça parte dessa corrente do bem
+      </h2>
+      <p style="text-align: center; font-size:21px; color:#faeee3;" class="text-lg leading-relaxed">
+        Sua doação faz a diferença.
+        
+      </p>
+      <div class="my-8">
+      </div>
+    </section>
+    <div class="donation-section">
+      <h1 class="section-title">Faça sua doação</h1>
+
+      <div class="donation-options-container">
+
+        <div class="option-item">
+          <div class="option-header" onclick="toggleContent(this)">
+            <span class="option-text highlighted">Como ajudar</span>
+            <span class="arrow-icon"></span>
+          </div>
+          <div class="option-content">
+            <p>Escolha a forma mais conveniente para você contribuir com nosso projeto social. Sua ajuda faz a diferença na vida de muitas pessoas.</p>
+          </div>
+        </div>
+
+        <div class="option-item">
+          <div class="option-header" onclick="toggleContent(this)">
+            <span class="option-text">Doação Online</span>
+            <span class="arrow-icon"></span>
+          </div>
+          <div class="option-content">
+            <p>Faça sua doação de forma rápida e segura através de nossa plataforma online. Aceitamos diferentes formas de pagamento.</p>
+          </div>
+        </div>
+
+        <div class="option-item">
+          <div class="option-header" onclick="toggleContent(this)">
+            <span class="option-text">Contato Corporativo</span>
+            <span class="arrow-icon"></span>
+          </div>
+          <div class="option-content">
+            <p>Para parcerias empresariais e doações corporativas, entre em contato através do email: restaurantes@bellor.com.br</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="button-container">
+<div class="button-container">
+    <a href="doacao.html" class="donation-button">QUERO DOAR</a>
+</div> 
+
+    </div>
+    
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+      .section-title {
+        font-size: 1.8em;
+        font-weight: 400;
+        margin-bottom: 15px;
+        padding: 0 10px;
+      }
+
+      .donation-options-container {
+        width: 100%;
+        text-align: left;
+        margin: 0 auto 50px auto;
+        padding: 0 10px;
+      }
+
+      .option-item {
+        border-bottom: 1px solid #e0dbd3;
+        padding: 15px 0;
+        cursor: pointer;
+      }
+
+      .option-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+      }
+
+      .option-text {
+        font-size: 1.1em;
+        font-weight: 400;
+      }
+
+      .option-text.highlighted {
+        text-decoration: underline;
+      }
+
+      .arrow-icon {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 5px solid #fbf8f8;
+        margin-left: 10px;
+        opacity: 0.7;
+        transition: transform 0.3s ease;
+      }
+
+      .option-item.active .arrow-icon {
+        transform: rotate(180deg);
+      }
+
+      .option-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        padding: 0 15px;
+      }
+
+      .option-item.active .option-content {
+        max-height: 200px;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      .option-content p {
+        margin: 0;
+        color: #ffffff;
+        font-size: 0.95em;
+        line-height: 1.5;
+      }
+
+      .option-header {
+        cursor: pointer;
+      }
+
+      .button-container {
+        padding-top: 30px;
+        text-align: center;
+      }
+
+      .donation-button {
+        background-color: #1a3547;
+        color: #ffffff;
+        border: none;
+        padding: 15px 35px;
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 3px 5px rgb(255, 255, 255);
+        transition: background-color 0.3s;
+        font-family: inherit;
+      }
+
+      .donation-button:hover {
+        background-color: #2b4f69;
+      }
+
+      /*-----------------------------------------------------------------*/
+      .donation-section {
+  background-color: #b89572; 
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px; 
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  position: relative; 
+  color: #333333; 
+  text-align: left; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+  min-height: 300px;
+}
+
+.donation-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; 
+  background-color: #b89572; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.donation-section h2 {
+  position: relative; 
+  z-index: 1;
+  margin: 0 0 10px 0; 
+  font-size: 18px;
+  color: #333333;
+}
+
+.option {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-bottom: 1px solid #cccccc; 
+  padding: 8px 0; 
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.option::after {
+  content: '▼'; 
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666666;
+}
+
+.donate-button {
+  background-color: #004080; 
+  color: #d8b38f;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: auto; 
+  margin: 20px auto 0; 
+  position: relative;
+  z-index: 1;
+}
+
+.donate-button:hover {
+  background-color: #002f5e; 
+}
+    </style>
+
+  </main>
+
+
+
+
+
+  
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <a href="../src/Controller/Templates/Home/index.html" class="footer-logo">
+          <img src="../src/Controller/Templates/Home/img/Logo grande.png" alt="Logo Bellor">
+        </a>
+        <p><a href="mailto:restaurantes@bellor.com.br">restaurantes@bellor.com.br</a></p>
+        <p><a href="tel:+5577998793159">(77) 99879-3159</a></p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="img/logo-instagram.png" alt="Instagram">
+          </a>
+          <a href="https://x.com" target="_blank">
+            <img src="img/logo-twitter.png" alt="Twitter">
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="img/logo-facebook.png" alt="Facebook">
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="../src/Controller/Templates/Home/index.html">Home</a></li>
+          <li><a href="../src/Controller/Templates/Menu/menu.html">Cardápio</a></li>
+          <li><a href="../src/Controller/Templates/projeto/projeto.html">Projetos sociais</a></li>
+          <li><a href="../src/Controller/Templates/Avaliação/avaliacoes.html">Avaliações</a></li>
+          <li><a href="../src/Controller/Templates/Sobre-nos/sobre.html">Sobre nós</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Localizações</h4>
+        <ul>
+          <li><a href="#">Guanambi - BA</a></li>
+          <li><a href="#">Salvador - BA</a></li>
+          <li><a href="#">Fortaleza - CE</a></li>
+          <li><a href="#">São Paulo - SP</a></li>
+          <li><a href="#">Rio de Janeiro - RJ</a></li>
+          <li><a href="#">Belo Horizonte - MG</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Atendimento</h4>
+        <ul>
+          <li><a href="../src/Controller/Templates/Reservas/reservas.html">Faça seu pedido</a></li>
+          <li><a href="../src/Controller/Templates/Menu/menu.html">Faça sua reserva</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Bellor Restaurante. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="projeto/projeto.js"></script>
+  <script>
+    function toggleContent(header) {
+      const item = header.parentElement;
+      const wasActive = item.classList.contains('active');
+      
+      
+      document.querySelectorAll('.option-item').forEach(el => {
+        el.classList.remove('active');
+      });
+      
+      if (!wasActive) {
+        item.classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+
+</html>

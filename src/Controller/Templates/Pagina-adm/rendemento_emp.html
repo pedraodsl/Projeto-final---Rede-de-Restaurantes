@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rendimento Mensal | Bellor Restaurante</title>
+  <link rel="stylesheet" href="cabecalho.css">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="icon" type="image/png" href="img/Logo.titulo.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .revenue-page { padding: 2rem; max-width: 1400px; margin: 0 auto; font-family: 'Segoe UI', sans-serif; }
+    .page-title { text-align: center; color: #680505; font-size: 2.5rem; margin: 2rem 0; }
+    .charts-container { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem; }
+    .chart-wrapper { background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+    .chart-wrapper h3 { color: #680505; text-align: center; margin-bottom: 1.5rem; font-size: 1.6rem; }
+    @media (max-width: 992px) { .charts-container { grid-template-columns: 1fr; } }
+    body.dark-mode .chart-wrapper { background: #2a2a2a; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="img/Logo.png" class="logo-tipo" alt="Logo Bellor">
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="doações.html">Doações</a></li>
+        <li><a href="pratos.html">Cardápio</a></li>
+        <li><a href="rendemento_emp.html" class="active">Rendimento Mensal</a></li>
+        <li><a href="votação.html">Votação</a></li>
+        <li><a href="promoções.html">Promoções</a></li>
+      </ul>
+      <div class="right-section">
+        <a href="login.html" class="login">
+          <img src="img/user.png" class="login" alt="Login">
+        </a>
+        <label class="switch">
+          <input type="checkbox" id="modo-btn">
+          <span class="slider"></span>
+        </label>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="revenue-page">
+    <h1 class="page-title">Rendimento Financeiro - Novembro 2025</h1>
+
+    <div class="charts-container">
+      <!-- Gráfico de Colunas: Rendimento Mensal -->
+      <div class="chart-wrapper">
+        <h3>R$ por Dia (Novembro)</h3>
+        <canvas id="monthlyBarChart"></canvas>
+      </div>
+
+      <!-- Gráfico de Linhas: Rendimento Semanal -->
+      <div class="chart-wrapper">
+        <h3>Evolução Semanal (Últimos 4 semanas)</h3>
+        <canvas id="weeklyLineChart"></canvas>
+      </div>
+    </div>
+
+    <div style="text-align:center; padding: 2rem; background: #f8f9fa; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
+      <h2 style="color: #680505;">Total do Mês: R$ 187.420,00</h2>
+      <p style="font-size: 1.2rem; color: #28a745;">+24,8% em relação a Outubro</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">
+          <img src="img/Logo grande.png" alt="Logo Bellor">
+        </a>
+        <p><a href="mailto:restaurantes@bellor.com.br">restaurantes@bellor.com.br</a></p>
+        <p><a href="tel:+5577998793159">(77) 99879-3159</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Bellor Restaurante. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Gráfico de Barras - Rendimento Diário (Novembro)
+    new Chart(document.getElementById('monthlyBarChart'), {
+      type: 'bar',
+      data: {
+        labels: ['01', '02', '03', '04', '05', '06', '07'],
+        datasets: [{
+          label: 'R$ Diário',
+          data: [5820, 6940, 7200, 8100, 9200, 10800, 8420],
+          backgroundColor: '#950707',
+          borderRadius: 8
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true } }
+      }
+    });
+
+    // Gráfico de Linha - Últimas 4 Semanas
+    new Chart(document.getElementById('weeklyLineChart'), {
+      type: 'line',
+      data: {
+        labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
+        datasets: [{
+          label: 'R$ Total',
+          data: [41200, 45800, 49200, 54220],
+          borderColor: '#680505',
+          backgroundColor: 'rgba(149, 7, 7, 0.1)',
+          tension: 0.4,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true } }
+      }
+    });
+  </script>
+</body>
+</html>

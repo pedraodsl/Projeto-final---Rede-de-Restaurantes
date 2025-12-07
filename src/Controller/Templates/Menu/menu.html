@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bellor Restaurante | Site Oficial</title>
+<link rel="stylesheet" href="Menu/cabecalho.css">
+<link rel="stylesheet" href="Menu/menu.css">
+<link rel="icon" type="image/png" href="Menu/img/Logo.titulo.png">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a href="Home/index.html" class="logo">
+      <img src="Home/img/Logo.png" class="logo-tipo" alt="Logo Bellor">
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="Home/index.html">Home</a></li>
+      <li><a href="reservas/reservas.html">Reservas</a></li>
+      <li><a href="Menu/menu.html" class="active">Menu</a></li>
+      <li><a href="projeto/projeto.html">Projeto</a></li>
+      <li><a href="Avaliação/avaliacoes.html">Avaliações</a></li>
+      <li><a href="sobre-nos/sobre.html">Sobre nós</a></li>
+    </ul>
+
+    <div class="right-section">
+     <a href="Pagina-login/login.html" class="login">
+      <img src="Pagina-login/img/user.png" class="login" alt="Login">
+      </a>
+      <label class="switch">
+        <input type="checkbox" id="modo-btn">
+        <span class="slider"></span>
+      </label>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </nav>
+</header>
+
+
+
+<main>
+    
+<section class="menu-section">
+  <div class="menu-banner">
+   <img src="Menu/img/Menu/peito-de-frango-grelhado-com-tomates-e-berinjela.png" alt="">
+  </div>
+
+  <div class="menu-intro">
+    <h1>MENU</h1>
+    <hr>
+    <p>
+      Cada página deste menu é um convite ao prazer de comer bem — com calma, com desejo, com afeto. 
+      Aqui, os ingredientes são tratados com respeito, os sabores ganham equilíbrio e os pratos chegam 
+      como devem chegar: cheios de intenção e sabor. <br>
+      Escolha com o olhar, peça com o coração e aproveite com todos os sentidos.
+    </p>
+  </div>
+
+<div class="menu-filter-container">
+  <div class="menu-filter-dropdown">
+    <button class="filter-btn">
+      Filtrar <span class="arrow">&#9660;</span>
+    </button>
+    <ul class="filter-options">
+      <li data-target="entradas">Entradas</li>
+      <li data-target="principais">Pratos principais</li>
+      <li data-target="acompanhamentos">Acompanhamentos</li>
+      <li data-target="sobremesas">Sobremesas</li>
+      <li data-target="bebidas">Bebidas</li>
+      <li data-target="especialidades">Especialidades da Casa</li>
+       <li data-target="especialidades">Opções Veganas</li>
+      <li data-target="ultimos">Últimos do dia</li>
+    </ul>
+  </div>
+</div>
+
+
+</div>
+
+
+ <div class="menu-categories">
+  <!-- Entradas -->
+  <div class="category" id="entradas" onclick="location.href='#entradas-section'">
+    <div class="img-placeholder" style="background-image: url('img/Menu/entradas.png');"></div>
+    <p>Entradas</p>
+  </div>
+
+  <div class="category" id="principais" onclick="location.href='#principais-section'">
+    <div class="img-placeholder" style="background-image: url('img/Menu/pratoprincipal.jpg');"></div>
+    <p>Pratos principais</p>
+  </div>
+
+  <div class="category" id="acompanhamentos" onclick="location.href='#acompanhamentos-section'">
+    <div class="img-placeholder" style="background-image: url('img/Menu/acompanhamentos.png');"></div>
+    <p>Acompanhamentos</p>
+  </div>
+
+  <div class="category" id="sobremesas" onclick="location.href='#sobremesas-section'">
+    <div class="img-placeholder" style="background-image: url('img/Menu/sobremesas.jpeg');"></div>
+    <p>Sobremesas</p>
+  </div>
+
+  <div class="category" id="bebidas" onclick="location.href='#bebidas-section'">
+    <div class="img-placeholder" style="background-image: url('img/Menu/bebidas.jpg');"></div>
+    <p>Bebidas</p>
+  </div>
+
+  <div class="category" id="especialidades" onclick="location.href='#especialidades-section'">
+    <div class="img-placeholder" style="background-image: url('img/Menu/especiais.jpg');"></div>
+    <p>Especialidades da Casa</p>
+  </div>
+
+  <div class="category" id="ultimos" onclick="location.href='#ultimos-section'">
+    <div class="img-placeholder" style="background-image: url('img/Menu/ultimos.jpeg');"></div>
+    <p>Últimos do dia</p>
+  </div>
+</div>
+
+
+<section id="entradas-section">
+    <br>
+    <br>
+  <div class="menu-section-header">
+    <h2>DELÍCIAS PARA ABRIR</h2>
+  </div>
+</section>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/entradas.png'); background-size: cover; background-position: center;"></div>
+  
+  <div class="dish-text">
+    <h4>Ceviche de Camarão com Leite de Coco e Gengibre</h4>
+    <p>
+      Camarões marinados no limão com gengibre fresco, envolvidos em leite de coco cremoso. 
+      Finalizado com cebola roxa, pimenta dedo-de-moça, coentro e lascas de coco tostado. 
+      Refrescante, delicado e cheio de sabor tropical.
+    </p>
+<br>
+    <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 40,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 45 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato2.png'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Carpaccio de Beterraba com Queijo de Cabra e Nozes</h4>
+    <p>
+     Fatias finas de beterraba assada servidas com queijo de cabra cremoso e nozes tostadas. 
+     Regado com azeite extra-virgem e toque de vinagre balsâmico, criando contraste de cores e sabores delicado.                              
+    </p>
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 32,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 25 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato3.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Tartar de Tomate Heirloom com Abacate e Redução de Balsâmico</h4>
+    <p>
+Camadas de tomates coloridos combinados com abacate cremoso, finalizados com redução de balsâmico e microgreens. Entrada elegante e saborosa.                             
+    </p>
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 30,00</span>
+    <span class="vegan-label">Vegano</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 25 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato4.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Carpaccio de Abobrinha com Pesto de Manjericão, Tomates Secos e Amêndoas</h4>
+    <p>
+Fatias finíssimas de abobrinha regadas com pesto de manjericão e decoradas com lascas de amêndoas tostadas e tomates secos. Entrada leve e sofisticada.                             
+    </p>
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 30,00</span>
+    <span class="vegan-label">Vegano</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 25 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato5.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Salada de Pera Grelhada com Nozes e Gorgonzola</h4>
+    <p>
+Pera levemente grelhada combinada com queijo gorgonzola cremoso, nozes caramelizadas e mix de folhas frescas. Equilíbrio perfeito entre doce, salgado e textura crocante.                        
+    </p>
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 35,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 25 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato6.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Vieiras Grelhadas com Purê de Couve-Flor e Pesto de Amêndoas</h4>
+    <p>
+Vieiras suculentas grelhadas, servidas sobre purê cremoso de couve-flor e finalizadas com pesto de amêndoas e limão. Entrada sofisticada e elegante.                        
+    </p>
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 45,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 25 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="principais-section">
+    <br>
+    <br>
+ <div class="menu-section-header">
+    <h2>PRINCIPAIS ESTRELAS</h2>
+  </div>
+</section>
+
+    <div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/pratoprincipal.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Camarão Dourado em Flor</h4>
+    <p>
+Camarões empanados crocantes, servidos sobre nuvem de arroz, finalizados com molho agridoce e flores comestíveis. Um toque delicado e surpreendente para iniciar sua experiência.                
+    </p>
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 65,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 35 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato1.2.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Filé Mignon ao Molho de Vinho Tinto com Purê de Batata-Doce</h4>
+    <p>
+Filé mignon macio, grelhado no ponto perfeito, servido com purê de batata-doce aveludado e molho de vinho tinto reduzido. Elegante, sabor intenso e apresentação impecável.                   
+    </p>
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 65,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 35 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato2.2.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Risoto Negro de Lula com Aioli de Limão</h4>
+    <p>
+Arroz arbóreo preparado com tinta de lula, servindo como base para lulas delicadamente grelhadas. Finalizado com aioli de limão e toque de ervas frescas, criando contraste de cores e sabores sofisticados.                 
+    </p>
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 75,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 35 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato3.2.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Peixe Branco em Crosta de Ervas com Redução de Maracujá</h4>
+    <p>
+Peixe branco fresco coberto com crosta de ervas finas, assado com perfeição e finalizado com redução de maracujá. Prato leve, aromático e colorido.               
+    </p>
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 65,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 35 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato4.2.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Pato Confit com Risoto de Laranja e Castanhas</h4>
+    <p>
+Pato confit delicadamente temperado, servido com risoto aromático de laranja e castanhas tostadas. Combinação sofisticada de sabores e texturas.        
+    </p>
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 75,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 35 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato5.2.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Ravioli de Abóbora com Manteiga de Sálvia e Amêndoas Tostadas</h4>
+    <p>
+Massa artesanal recheada com abóbora, finalizada com manteiga de sálvia e amêndoas tostadas. Prato leve, delicado e visual elegante.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 50,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 35 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato6.2.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Entrecôte Grelhado com Manteiga de Ervas e Batatas Rústicas</h4>
+    <p>
+Corte suculento de entrecôte grelhado, servido com batatas rústicas douradas e manteiga aromática de ervas finas. Prato clássico e sofisticado.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 70,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 35 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato7.2.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Moqueca Vegana de Banana-da-Terra e Palmito Pupunha</h4>
+    <p>
+Versão vegana da clássica moqueca brasileira, com banana-da-terra e palmito pupunha em molho de coco e dendê. Colorida, aromática e visualmente impressionante.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 50,00</span>
+          <span class="vegan-label">Vegano</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 35 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato8.2.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Nhoque de Batata Roxa ao Molho de Tomate Assado e Manjericão</h4>
+    <p>
+Nhoques delicados de batata roxa, servidos com molho de tomate assado, manjericão fresco e azeite de oliva. Prato vegano bonito e harmonioso.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 50,00</span>
+          <span class="vegan-label">Vegano</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 35 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/foto9.2\ \(wasabi\).jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Polvo Grelhado com Purê de Ervilhas e Azeite Defumado</h4>
+    <p>
+Polvo grelhado no ponto certo, acompanhado de purê aveludado de ervilhas e finalizado com azeite defumado. Sofisticado, sabor marcante e visual elegante.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 75,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 35 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="acompanhamentos-section">
+    <br>
+    <br>
+ <div class="menu-section-header">
+    <h2>COMPLEMENTOS PERFEITOS</h2>
+  </div>
+</section>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato1.3.jpeg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Arroz de Coco com Castanhas</h4>
+    <p>
+Arroz soltinho cozido em leite de coco, com castanhas levemente tostadas. Textura cremosa e sabor delicado.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 22,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato2.3.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Purê de Mandioquinha com Azeite de Limão</h4>
+    <p>
+Purê aveludado de mandioquinha, aromatizado com azeite de limão siciliano. Simples, elegante e vegano.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 20,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato3.3.jpeg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Batatas Rústicas com Alecrim</h4>
+    <p>
+Batatas cortadas em palitos grossos, assadas com azeite e alecrim fresco. Crocantes por fora, macias por dentro.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 18,00</span>
+          <span class="vegan-label">Vegano</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato4.3.jpeg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Legumes Grelhados ao Balsâmico</h4>
+    <p>
+Seleção de legumes da estação grelhados, regados com redução de balsâmico. Colorido e sofisticado.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 20,00</span>
+          <span class="vegan-label">Vegano</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato5.3.jpeg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Farofa Crocante de Panko e Ervas</h4>
+    <p>
+Farofa crocante feita com pão panko e ervas frescas, perfeita para complementar qualquer prato.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 15,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato6.3.png'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Risoto de Queijo e Cogumelos</h4>
+    <p>
+Arroz cremoso com mix de cogumelos frescos e queijo ralado, aromático e visual elegante.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 32,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato7.3.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Salada Verde com Vinagrete de Mel e Mostarda</h4>
+    <p>
+Mix de folhas frescas com vinagrete delicado de mel e mostarda, leve e refrescante.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 20,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section id="sobremesas-section">
+    <br>
+    <br>
+ <div class="menu-section-header">
+    <h2>DOÇURA FINAL</h2>
+  </div>
+</section>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato1.4.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Petit Gâteau de Chocolate com Calda de Frutas Vermelhas</h4>
+    <p>
+Bolinho de chocolate com casca delicada e interior cremoso, servido quente com calda artesanal de frutas vermelhas e uma bola de sorvete de baunilha. Clássico, indulgente e irresistível.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 32,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato2.4.png'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Tartelette de Limão Siciliano com Merengue Italiano</h4>
+    <p>
+Massa crocante, recheada com creme aveludado de limão siciliano e coberta por merengue italiano dourado. Um clássico elegante, com equilíbrio entre o doce e o cítrico.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 32,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato3.4.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Cheesecake de Frutas Vermelhas com Calda Artesanal</h4>
+    <p>
+Base crocante, cheesecake cremoso e calda de frutas vermelhas frescas. Visual colorido e sofisticado, com sabor equilibrado e textura leve.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 32,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato4.4.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Pavê de Pistache com Ganache Branca</h4>
+    <p>
+Camadas intercaladas de biscoito embebido, creme de pistache e ganache branca, finalizadas com pistaches tostados. Doce refinado e visualmente encantador.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 34,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato5.4.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Mousse de Maracujá com Crocante de Cacau</h4>
+    <p>
+Mousse leve e aerada de maracujá, com cobertura crocante de cacau. Refrescante e perfeita para encerrar a refeição com leveza.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 28,00</span>
+        <span class="vegan-label">Vegano</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato6.4.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Crème Brûlée de Café</h4>
+    <p>
+Creme aveludado de café coberto com fina camada de açúcar caramelizado. Textura cremosa, sabor marcante e aroma envolvente.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 32,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato7.4.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Panna Cotta de Coco com Calda de Manga e Hortelã</h4>
+    <p>
+Panna cotta cremosa de coco, servida com calda de manga fresca e folhas de hortelã. Colorida e sofisticada, um toque tropical no final da refeição.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 28,00</span>
+        <span class="vegan-label">Vegano</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 10 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section id="bebidas-section">
+    <br>
+    <br>
+ <div class="menu-section-header">
+    <h2>REFRESCOS E COQUETÉIS</h2>
+  </div>
+</section>
+
+ <!-- Água -->
+  <div class="dish">
+    <div class="dish-img" style="background-image: url('img/Menu/bebida1.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="dish-text">
+      <h4>Água com e sem gás</h4>
+      <p>Servida gelada, perfeita para acompanhar qualquer refeição com leveza e frescor.</p>
+      <select class="drink-option">
+        <option>Selecione o tipo</option>
+        <option>Água sem gás</option>
+        <option>Água com gás</option>
+      </select>
+      <div class="rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9734;</span>
+      </div><br>
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="price">R$ 8,00</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 2 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button>
+          <span class="quantity">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sucos Naturais -->
+  <div class="dish">
+    <div class="dish-img" style="background-image: url('img/Menu/bebida2.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="dish-text">
+      <h4>Sucos Naturais</h4>
+      <p>Feitos na hora, com frutas frescas e sem adição de conservantes.</p>
+      <select class="drink-option">
+        <option>Selecione o sabor</option>
+        <option>Laranja</option>
+        <option>Melancia</option>
+        <option>Limão</option>
+        <option>Abacaxi com Hortelã</option>
+      </select>
+      <div class="rating">
+        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
+      </div><br>
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="price">R$ 12,00</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 5 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button><span class="quantity">0</span><button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Refrigerantes -->
+  <div class="dish">
+    <div class="dish-img" style="background-image: url('img/Menu/bebida3.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="dish-text">
+      <h4>Refrigerantes</h4>
+      <p>Clássicos, gelados e sempre refrescantes.</p>
+      <select class="drink-option">
+        <option>Selecione o tipo</option>
+        <option>Coca-Cola (lata)</option>
+         <option>Coca-Cola (1 litro)</option>
+        <option>Coca-Cola Zero (lata)</option>
+        <option>Coca-Cola Zero (1 litro)</option>
+        <option>Pepsi</option>
+        <option>Guaraná Antarctica (lata)</option>
+        <option>Guaraná Antarctica (1 litro)</option>
+        <option>Sprite (lata)</option>
+        <option>Fanta Laranja (lata)</option>
+         <option>Fanta Laranja (1 litro)</option>
+      </select>
+      <div class="rating">
+        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
+      </div><br>
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="price">R$ 10,00</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 2 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button><span class="quantity">0</span><button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Limonada Siciliana -->
+  <div class="dish">
+    <div class="dish-img" style="background-image: url('img/Menu/bebida4.jpeg'); background-size: cover; background-position: center;"></div>
+    <div class="dish-text">
+      <h4>Limonada Siciliana com Gengibre</h4>
+      <p>Combinação equilibrada do limão siciliano com toque picante do gengibre fresco. Refrescante e sofisticada.</p>
+      <div class="rating">
+        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
+      </div><br>
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="price">R$ 14,00</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 4 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button><span class="quantity">0</span><button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chá Gelado -->
+  <div class="dish">
+    <div class="dish-img" style="background-image: url('img/Menu/bebida5.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="dish-text">
+      <h4>Chá Gelado de Hibisco com Frutas Vermelhas</h4>
+      <p>Infusão natural de hibisco e frutas vermelhas, servida bem gelada. Colorida, aromática e levemente cítrica.</p>
+      <div class="rating">
+        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
+      </div><br>
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="price">R$ 12,00</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 5 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button><span class="quantity">0</span><button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vinho Branco -->
+  <div class="dish">
+    <div class="dish-img" style="background-image: url('img/Menu/bebida6.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="dish-text">
+      <h4>Vinho Branco</h4>
+      <p>Servidos na temperatura ideal para destacar aroma e frescor.</p>
+      <select class="drink-option">
+        <option>Selecione o tipo</option>
+        <option>Sauvignon Blanc</option>
+        <option>Chardonnay</option>
+      </select>
+      <div class="rating">
+        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
+      </div><br>
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="price">R$ 65,00</span>
+          <span class="alcohol-label">Contém Álcool</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 3 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button><span class="quantity">0</span><button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vinho Tinto -->
+  <div class="dish">
+    <div class="dish-img" style="background-image: url('img/Menu/bebida7.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="dish-text">
+      <h4>Vinho Tinto</h4>
+      <p>Rótulos selecionados para harmonizar com carnes, risotos e massas.</p>
+      <select class="drink-option">
+        <option>Selecione o tipo</option>
+        <option>Malbec</option>
+        <option>Pinot Noir</option>
+      </select>
+      <div class="rating">
+        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
+      </div><br>
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="price">R$ 70,00</span>
+          <span class="alcohol-label">Contém Álcool</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 3 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button><span class="quantity">0</span><button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cervejas -->
+  <div class="dish">
+    <div class="dish-img" style="background-image: url('img/Menu/bebida8.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="dish-text">
+      <h4>Cervejas</h4>
+      <p>Servidas bem geladas, com espuma leve e sabor equilibrado.</p>
+      <select class="drink-option">
+        <option>Selecione a marca</option>
+        <option>Heineken</option>
+        <option>Stella Artois</option>
+        <option>Budweiser</option>
+        <option>Brahma</option>
+      </select>
+      <div class="rating">
+        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
+      </div><br>
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="price">R$ 15,00</span>
+          <span class="alcohol-label">Contém Álcool</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 2 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button><span class="quantity">0</span><button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Caipirinha -->
+  <div class="dish">
+    <div class="dish-img" style="background-image: url('img/Menu/bebida9.jpeg'); background-size: cover; background-position: center;"></div>
+    <div class="dish-text">
+      <h4>Caipirinha de Frutas da Estação</h4>
+      <p>Clássico brasileiro preparado com frutas frescas, cachaça artesanal e toque cítrico equilibrado.</p>
+       <select class="drink-option">
+        <option>Selecione o sabor</option>
+        <option>Limão</option>
+        <option>Morango</option>
+         <option>Maracujá</option>
+      </select>
+      <div class="rating">
+        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
+      </div><br>
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="price">R$ 22,00</span>
+          <span class="alcohol-label">Contém Álcool</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 5 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button><span class="quantity">0</span><button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drink da Casa -->
+  <div class="dish">
+    <div class="dish-img" style="background-image: url('img/Menu/bebida10.jpeg'); background-size: cover; background-position: center;"></div>
+    <div class="dish-text">
+      <h4>Brisa Tropical</h4>
+      <p>Combinação refrescante de rum, abacaxi e hortelã, com visual vibrante e sabor marcante.</p>
+      <div class="rating">
+        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
+      </div><br>
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="price">R$ 25,00</span>
+          <span class="alcohol-label">Contém Álcool</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 6 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button><span class="quantity">0</span><button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kombucha -->
+  <div class="dish">
+    <div class="dish-img" style="background-image: url('img/Menu/Bebida11.png'); background-size: cover; background-position: center;"></div>
+    <div class="dish-text">
+      <h4>Kombucha Artesanal</h4>
+      <p>Bebida fermentada naturalmente, levemente gaseificada e cheia de frescor. Saudável e cheia de personalidade.</p>
+      <div class="rating">
+        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
+      </div><br>
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="price">R$ 15,00</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 4 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button><span class="quantity">0</span><button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<section id="especialidades-section">
+    <br>
+    <br>
+ <div class="menu-section-header">
+    <h2>PRATOS EXCLUSIVOS</h2>
+  </div>
+</section>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato1.5.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Polvo Grelhado com Mousseline de Batata-Doce Roxa e Azeite de Páprica</h4>
+    <p>
+Tentáculos de polvo perfeitamente grelhados, servidos sobre mousseline de batata-doce roxa e finalizados com azeite de páprica defumada e microervas. Sofisticado e vibrante.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 82,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 20 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato2.5.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Magret de Pato ao Molho de Laranja e Purê de Cenoura com Gengibre</h4>
+    <p>
+Peito de pato grelhado ao ponto rosado, servido com molho cítrico de laranja e purê cremoso de cenoura e gengibre. Equilíbrio perfeito entre doçura e acidez.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 86,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 20 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato3.5.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Risoto de Aspargos Verdes e Limão Siciliano com Crocante de Parmesão</h4>
+    <p>
+Arroz arbório cremoso com aspargos frescos e toque cítrico de limão siciliano, finalizado com crocante de parmesão vegetal. Elegante e leve.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+        <span class="price">R$ 55,00</span>
+        <span class="vegan-label">Vegano</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 20 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="ultimos-section">
+    <br>
+    <br>
+   <div class="menu-section-header">
+    <h2>ÚLTIMOS DO DIA</h2>
+  </div>
+</section>
+
+  
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato2.6.jpeg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Gnocchi de Batata Roxa com Molho de Cogumelos Selvagens</h4>
+    <p>
+Nhoques macios de batata roxa servidos com molho aveludado de cogumelos selvagens e toque de azeite trufado. Visual marcante e sabor intenso.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+                 <span class="old-price" title="Preço original">R$ 45,00</span>
+        <span class="new-price" title="Preço promocional">R$ 25,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 20 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato3.6.png'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Peixe do Dia com Crosta de Amêndoas e Purê de Couve-Flo</h4>
+    <p>
+Filé de peixe fresco com crosta crocante de amêndoas, acompanhado de purê de couve-flor e redução cítrica. Elegante e equilibrado.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+         <span class="old-price" title="Preço antigo">R$ 62,00</span>
+      <span class="new-price" title="Preço promocional">R$ 38,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 20 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato4.6.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Mini Moqueca de Camarão e Pupunha</h4>
+    <p>
+Versão delicada da clássica moqueca, com camarões salteados, palmito pupunha e leite de coco. Servida fumegante e cheia de sabor tropical.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+         <span class="old-price" title="Preço antigo">R$ 48,00</span>
+<span class="new-price" title="Preço promocional">R$ 26,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 20 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato5.6.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Tagliata de Mignon com Redução de Balsâmico e Rúcula Fresca</h4>
+    <p>
+Tiras de mignon grelhadas ao ponto, servidas com rúcula, lascas de parmesão e redução de balsâmico. Um clássico italiano reinterpretado.
+     <br> 
+  <!-- Avaliação -->
+    <div class="rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </div>
+<br>
+    <!-- Preço, tempo e contador em linha fixa -->
+    <div class="dish-footer">
+      <div class="price-time">
+         <span class="old-price" title="Preço antigo">R$ 68,00</span>
+<span class="new-price" title="Preço promocional">R$ 40,00</span>
+        <span class="prep-time" title="Tempo de produção">⏱ 20 min</span>
+      </div>
+      <div class="quantity-selector">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="dish">
+  <div class="dish-img" style="background-image: url('img/Menu/prato1.6.jpg'); background-size: cover; background-position: center;"></div>
+  <div class="dish-text">
+    <h4>Curry de Grão-de-Bico e Abóbora com Arroz de Coco</h4>
+    <p>
+      Curry suave de grão-de-bico e abóbora com especiarias indianas, servido com arroz de coco. Aromático e nutritivo.
+      <br>
+      <!-- Avaliação -->
+      <div class="rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9734;</span>
+      </div>
+      <br>
+
+      <!-- Preço, tempo e contador em linha fixa -->
+      <div class="dish-footer">
+        <div class="price-time">
+          <span class="old-price" title="Preço antigo">R$ 48,00</span>
+<span class="new-price" title="Preço promocional">R$ 26,00</span>
+          <span class="vegan-label">Vegano</span>
+          <span class="prep-time" title="Tempo de produção">⏱ 20 min</span>
+        </div>
+        <div class="quantity-selector">
+          <button class="minus">-</button>
+          <span class="quantity">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+</div>
+
+
+<div class="pedido-container">
+  <p class="valor-total">Valor total: <span>R$ 0,00</span></p>
+  <br>
+  <div class="botoes">
+    <button class="botao">Pedir na mesa</button>
+    <button class="botao">Pedir Delivery</button>
+  </div>
+</div>
+</section>
+</main>
+
+
+<!-- RODAPÉ -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <a href="Home/index.html" class="footer-logo">
+        <img src="Home/img/Logo grande.png" alt="Logo Bellor">
+      </a>
+      <p><a href="mailto:restaurantes@bellor.com.br">restaurantes@bellor.com.br</a></p>
+      <p><a href="tel:+5577998793159">(77) 99879-3159</a></p>
+      <div class="social-icons">
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="Menu/img/logo-instagram.png" alt="Instagram">
+  </a>
+  <a href="https://x.com" target="_blank">
+    <img src="Menu/img/logo-twitter.png" alt="Twitter">
+  </a>
+  <a href="https://www.facebook.com" target="_blank">
+    <img src="Menu/img/logo-facebook.png" alt="Facebook">
+  </a>
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="Home/index.html">Home</a></li>
+        <li><a href="Menu/menu.html">Cardápio</a></li>
+        <li><a href="projeto/projeto.html">Projetos sociais</a></li>
+        <li><a href="Avaliação/avaliacoes.html">Avaliações</a></li>
+        <li><a href="sobre-nos/sobre.html">Sobre nós</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Localizações</h4>
+      <ul>
+        <li><a href="#">Guanambi - BA</a></li>
+        <li><a href="#">Salvador - BA</a></li>
+        <li><a href="#">Fortaleza - CE</a></li>
+        <li><a href="#">São Paulo - SP</a></li>
+        <li><a href="#">Rio de Janeiro - RJ</a></li>
+        <li><a href="#">Belo Horizonte - MG</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Atendimento</h4>
+      <ul>
+        <li><a href="Menu/menu.html">Faça seu pedido</a></li>
+        <li><a href="reservas/reservas.html">Faça sua reserva</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Bellor Restaurante. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<button id="scroll-up-btn" title="Voltar à seleção de pratos">
+  &#8679;
+</button>
+<script src="Menu/script.js"></script>
+</body>
+</html>
+

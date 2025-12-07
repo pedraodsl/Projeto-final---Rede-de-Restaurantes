@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bellor | Painel Administrativo Avançado</title>
+  <link rel="stylesheet" href="Pagina-adm/cabecalho.css"/>
+  <link rel="stylesheet" href="Pagina-adm/admin.css"/>
+  <link rel="icon" type="image/png" href="Pagina-adm/img/Logo.titulo.png"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <a href="Home/index.html" class="logo">
+        <img src="Home/img/Logo.png" class="logo-tipo" alt="Bellor">
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="Pagina-adm/doações.html">Doações</a></li>
+        <li><a href="Pagina-adm/pratos.html">Cardápio</a></li>
+        <li><a href="Pagina-adm/rendemento_emp.html">Rendimento</a></li>
+        <li><a href="Pagina-adm/votação.html">Votação</a></li>
+        <li><a href="Pagina-adm/promoções.html">Promoções</a></li>
+        <li><a href="Pagina-adm/admin-reservas.html">Reservas</a></li>
+      </ul>
+      <div class="right-section">
+        <a href="Pagina-login/login.html"><img src="Pagina-login/img/user.png" class="login" alt="Login"></a>
+        <label class="switch">
+          <input type="checkbox" id="modo-btn">
+          <span class="slider"></span>
+        </label>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SIDEBAR + MAIN -->
+  <div class="dashboard-container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="#perfil" class="home-link">
+          <img src="Pagina-adm/img/Logo.png" alt="Bellor" class="sidebar-logo">
+          <h2>Administração</h2>
+        </a>
+</div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#perfil" class="active"><i class="fas fa-user"></i> Perfil & Conta</a></li>
+          <li><a href="#restaurantes"><i class="fas fa-store"></i> Restaurantes</a></li>
+          <li><a href="#cardapio"><i class="fas fa-utensils"></i> Cardápio</a></li>
+          <li><a href="#equipe"><i class="fas fa-users"></i> Equipe</a></li>
+          <li><a href="#estoque"><i class="fas fa-box"></i> Estoque</a></li>
+          <li><a href="#relatorios"><i class="fas fa-chart-bar"></i> Relatórios</a></li>
+          <li><a href="#marketing"><i class="fas fa-bullhorn"></i> Marketing</a></li>
+          <li><a href="#fidelidade"><i class="fas fa-heart"></i> Fidelidade & Doações</a></li>
+          <li><a href="#site"><i class="fas fa-globe"></i> Site & Conteúdo</a></li>
+          <li><a href="#ia"><i class="fas fa-brain"></i> Inteligência</a></li>
+          <li><a href="#sistema"><i class="fas fa-cogs"></i> Sistema</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="logout-btn"><i class="fas fa-sign-out-alt"></i> Sair</button>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <button class="top-home-btn" id="top-home-btn">
+        <i class="fas fa-home"></i> Início
+      </button>
+      <!-- 1. PERFIL -->
+      <section id="perfil" class="section active">
+        <h1><i class="fas fa-user"></i> Perfil & Conta</h1>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Informações Pessoais</h3>
+            <p><strong>Nome:</strong> João Silva</p>
+            <p><strong>E-mail:</strong> admin@bellor.com.br</p>
+            <p><strong>Telefone:</strong> (77) 99879-3159</p>
+            <p><strong>WhatsApp Comercial:</strong> (77) 98888-7777</p>
+            <p><strong>Idioma:</strong> Português (BR)</p>
+            <button class="btn-edit">Editar</button>
+          </div>
+          <div class="card">
+            <h3>Notificações</h3>
+            <label><input type="checkbox" checked> E-mails promocionais</label><br>
+            <label><input type="checkbox" checked> Alertas de estoque baixo</label><br>
+            <label><input type="checkbox"> Notificações no painel</label>
+          </div>
+          <div class="card">
+            <h3>Segurança</h3>
+            <p>2FA: <span class="status on">Ativo</span></p>
+            <p>Último login: 07/11/2025 14:32</p>
+            <button class="btn-danger">Redefinir Senha</button>
+            <button class="btn-danger">Encerrar Todas as Sessões</button>
+          </div>
+          <div class="card">
+            <h3>Atividade Recente</h3>
+            <ul class="activity-list">
+              <li>Alterou preço do prato "Feijoada" → 14:20</li>
+              <li>Adicionou promoção "Combo Família" → 13:55</li>
+              <li>Login via desktop → 14:32</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. RESTAURANTES -->
+      <section id="restaurantes" class="section">
+        <h1><i class="fas fa-store"></i> Gestão de Restaurantes</h1>
+        <button class="btn-primary">+ Adicionar Unidade</button>
+        <div class="restaurante-list">
+          <div class="restaurante-card">
+            <h3>Guanambi - BA</h3>
+            <p>Status: <span class="status on">Aberto</span></p>
+            <p>Endereço: Rua Principal, 123</p>
+            <p>Horário: 11h–23h</p>
+            <button class="btn-small">Editar</button>
+            <button class="btn-small">Ver Estoque</button>
+          </div>
+          <!-- mais unidades aqui -->
+        </div>
+      </section>
+
+      <!-- 3. CARDÁPIO -->
+      <section id="cardapio" class="section">
+        <h1><i class="fas fa-utensils"></i> Cardápio Avançado</h1>
+        <div class="tabs">
+          <button class="tab active" data-tab="pratos">Pratos</button>
+          <button class="tab" data-tab="promocoes">Promoções</button>
+          <button class="tab" data-tab="sazonal">Sazonal</button>
+        </div>
+        <div id="pratos" class="tab-content active">
+          <button class="btn-primary">+ Novo Prato</button>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Prato</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+                <th>Tempo</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Feijoada Completa</td>
+                <td>R$ 69,90</td>
+                <td><span class="status off">Fora de estoque</span></td>
+                <td>25 min</td>
+                <td><button class="btn-small">Editar</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 4. EQUIPE -->
+      <section id="equipe" class="section">
+        <h1><i class="fas fa-users"></i> Gestão de Equipe</h1>
+        <button class="btn-primary">+ Novo Colaborador</button>
+        <div class="grid-3">
+          <div class="card-equipe">
+            <img src="img/user.png" alt="Maria">
+            <h4>Maria Santos</h4>
+            <p>Garçom</p>
+            <p>128 pedidos hoje</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. ESTOQUE -->
+      <section id="estoque" class="section">
+        <h1><i class="fas fa-box"></i> Gestão de Estoque</h1>
+        <div class="alert">3 itens com estoque crítico!</div>
+        <button class="btn-primary">+ Nova Entrada</button>
+      </section>
+
+      <!-- 6. RELATÓRIOS -->
+      <section id="relatorios" class="section">
+  <h1><i class="fas fa-chart-bar"></i> Relatórios & Estatísticas</h1>
+
+  <!-- CARTÕES PRINCIPAIS -->
+  <div class="stats-grid">
+    <div class="stat-card big">
+      <div class="stat-icon">R$</div>
+      <div class="stat-value">R$ 12.450,00</div>
+      <div class="stat-label">Total de Vendas Hoje</div>
+    </div>
+
+    <div class="stat-card big">
+      <div class="stat-icon">👤</div>
+      <div class="stat-value">842</div>
+      <div class="stat-label">Novos Clientes</div>
+      <div class="stat-trend positive">+18% <span>vs semana anterior</span></div>
+    </div>
+  </div>
+
+  <!-- RESUMO SEMANAL/MENSAL -->
+  <div class="summary-grid">
+    <div class="summary-card">
+      <h3>Receita Semanal</h3>
+      <p class="big-number">R$ 48.920,00</p>
+      <p class="trend positive">+12% vs semana anterior</p>
+    </div>
+    <div class="summary-card">
+      <h3>Receita Mensal</h3>
+      <p class="big-number">R$ 198.400,00</p>
+      <p class="trend positive">+8% vs mês anterior</p>
+    </div>
+    <div class="summary-card">
+      <h3>Reservas</h3>
+      <p class="big-number">238</p>
+      <p class="trend positive">+42% esta semana</p>
+    </div>
+  </div>
+
+  <!-- GRÁFICOS -->
+   <!-- GRÁFICO DE LINHAS - EVOLUÇÃO DAS VENDAS -->
+<div class="chart-container" style="margin-top: 2rem; height: 380px;">
+  <h3 style="text-align:center; margin:0 0 1.5rem 0; color:#680505;">
+    Evolução das Vendas (Últimos 30 dias)
+  </h3>
+  <canvas id="linhaVendas"></canvas>
+</div>
+  <div class="charts-grid">
+    <!-- GRÁFICO DUPLO: PRATOS + FATURAMENTO SEMANAL -->
+<div class="chart-container">
+  <h3>Pratos Mais Populares</h3>
+  <canvas id="chartPratos"></canvas>
+
+  <h3 style="margin: 2rem 0 1rem 0; text-align:center; color:#680505;">
+    Faturamento Semanal (R$)
+  </h3>
+  <canvas id="chartFaturamentoSemanal"></canvas>
+</div>
+    <div class="chart-container">
+  <h3>Ranking de Filiais (Mais Populares)</h3>
+  <div class="ranking-list">
+    <div class="ranking-item gold">
+      <div class="rank">#1</div>
+      <div class="filial-info">
+        <h4>Guanambi - BA (Matriz)</h4>
+        <p>980 pedidos hoje • R$ 68.500,00</p>
+      </div>
+      <div class="filial-score">
+        <span class="score">9.8</span>
+        <span class="stars">★★★★★</span>
+      </div>
+    </div>
+
+    <div class="ranking-item silver">
+      <div class="rank">#2</div>
+      <div class="filial-info">
+        <h4>São Paulo - SP</h4>
+        <p>720 pedidos • R$ 50.400,00</p>
+      </div>
+      <div class="filial-score">
+        <span class="score">9.4</span>
+        <span class="stars">★★★★☆</span>
+      </div>
+    </div>
+
+    <div class="ranking-item bronze">
+      <div class="rank">#3</div>
+      <div class="filial-info">
+        <h4>Rio de Janeiro - RJ</h4>
+        <p>680 pedidos • R$ 47.600,00</p>
+      </div>
+      <div class="filial-score">
+        <span class="score">9.2</span>
+        <span class="stars">★★★★☆</span>
+      </div>
+    </div>
+
+    <div class="ranking-item">
+      <div class="rank">#4</div>
+      <div class="filial-info">
+        <h4>Salvador - BA</h4>
+        <p>540 pedidos • R$ 37.800,00</p>
+      </div>
+      <div class="filial-score">
+        <span class="score">8.9</span>
+        <span class="stars">★★★★☆</span>
+      </div>
+    </div>
+
+    <div class="ranking-item">
+      <div class="rank">#5</div>
+      <div class="filial-info">
+        <h4>Fortaleza - CE</h4>
+        <p>380 pedidos • R$ 26.600,00</p>
+      </div>
+      <div class="filial-score">
+        <span class="score">8.6</span>
+        <span class="stars">★★★★☆</span>
+      </div>
+    </div>
+
+    <div class="ranking-item">
+      <div class="rank">#6</div>
+      <div class="filial-info">
+        <h4>Belo Horizonte - MG</h4>
+        <p>320 pedidos • R$ 22.400,00</p>
+      </div>
+      <div class="filial-score">
+        <span class="score">8.3</span>
+        <span class="stars">★★★★☆</span>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+      <!-- 7. MARKETING -->
+      <section id="marketing" class="section">
+        <h1><i class="fas fa-bullhorn"></i> Comunicação & Marketing</h1>
+        <button class="btn-primary">Enviar Push</button>
+        <button class="btn-primary">Enviar E-mail</button>
+      </section>
+
+      <!-- 8. FIDELIDADE -->
+      <section id="fidelidade" class="section">
+        <h1><i class="fas fa-heart"></i> Fidelidade & Doações</h1>
+        <p>Total doado em 2025: R$ 48.920,00</p>
+      </section>
+
+      <!-- 9. SITE -->
+      <section id="site" class="section">
+        <h1><i class="fas fa-globe"></i> Site & Conteúdo</h1>
+        <button class="btn-primary">Editar Página Sobre</button>
+      </section>
+
+      <!-- 10. IA -->
+      <section id="ia" class="section">
+        <h1><i class="fas fa-brain"></i> Inteligência & Automação</h1>
+        <div class="insight">
+          <strong>Sugestão do dia:</strong> Crie promoção "Compre 1 leve 2" no prato "Lasanha" – previsão +42% vendas
+        </div>
+      </section>
+
+      <!-- 11. SISTEMA -->
+      <section id="sistema" class="section">
+        <h1><i class="fas fa-cogs"></i> Sistema & Suporte</h1>
+        <button class="btn-primary">Fazer Backup Agora</button>
+        <button class="btn-danger">Modo Manutenção</button>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">
+          <img src="img/Logo grande.png" alt="Bellor">
+        </a>
+        <p>© 2025 Bellor Restaurante. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Pagina-adm/script.js"></script>
+  <script src="Pagina-adm/script.js"></script>
+</body>
+</html>

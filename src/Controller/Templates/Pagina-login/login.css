@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    /* COLOQUE A IMAGEM DE FUNDO AQUI */
+    background-image: url('CAMINHO_DA_SUA_IMAGEM_DE_FUNDO.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    filter: brightness(0.8);
+}
+
+/* Header */
+header {
+    background-color: rgba(245, 235, 220, 0.95);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+body.dark-mode header {
+    background-color: rgba(40, 30, 20, 0.95);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* COLOQUE A LOGO AQUI */
+    background-image: url('CAMINHO_DA_LOGO.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a3728;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+body.dark-mode nav a {
+    color: #f5ebdc;
+}
+
+nav a:hover {
+    color: #8b6f47;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.user-icon, .theme-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #8b6f47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-icon:hover, .theme-toggle:hover {
+    background-color: #6b5437;
+}
+
+.theme-toggle {
+    background-color: #4a3728;
+    color: white;
+    font-size: 20px;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #f5ebdc;
+    color: #4a3728;
+}
+
+/* Modal Container */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-container {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 750px;
+    width: 85%;
+    max-height: 80vh;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #8b6f47;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #6b5437;
+}
+
+/* Benefits Section */
+.benefits-section {
+    background-color: #e8dcc8;
+    padding: 35px 25px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefits-logo {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    /* COLOQUE A LOGO AQUI */
+    background-image: url('CAMINHO_DA_LOGO.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.benefits-section h3 {
+    text-align: center;
+    color: #4a3728;
+    margin-bottom: 22px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    color: #4a3728;
+    font-size: 12.5px;
+    line-height: 1.4;
+}
+
+.benefit-item::before {
+    content: "✓";
+    color: #8b6f47;
+    font-weight: bold;
+    margin-right: 8px;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+/* Auth Section (Login/Cadastro) */
+.auth-section {
+    padding: 30px 40px;
+    width: 60%;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #999;
+    font-weight: 600;
+    transition: all 0.3s;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tab.active {
+    color: #4a3728;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #4a3728;
+}
+
+.form-container {
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #4a3728;
+    margin-bottom: 22px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    color: #999;
+    margin-bottom: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 11px 12px;
+    border: none;
+    background-color: #ececec;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: outline 0.3s, background-color 0.3s;
+    font-family: 'Georgia', serif;
+    color: #4a3728;
+}
+
+.input-group input:focus {
+    outline: 2px solid #8b6f47;
+    background-color: #f5f5f5;
+}
+
+.input-group input::placeholder {
+    color: #bbb;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+    user-select: none;
+    font-size: 16px;
+}
+
+.toggle-password:hover {
+    color: #666;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: -5px;
+    margin-bottom: 18px;
+}
+
+.forgot-password a {
+    color: #8b6f47;
+    text-decoration: none;
+    font-size: 11px;
+    transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+    color: #6b5437;
+    text-decoration: underline;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 11px;
+    background-color: #c9b17a;
+    color: #4a3728;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 8px;
+}
+
+.auth-btn:hover {
+    background-color: #b59f68;
+}
+
+.auth-btn:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .modal-container {
+        flex-direction: column;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .benefits-section, .auth-section {
+        width: 100%;
+    }
+
+    .benefits-section {
+        padding: 30px;
+    }
+
+    .auth-section {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
