@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bellor Restaurante | Projeto Social</title>
+  <link rel="stylesheet" href="cabecalho.css">
+  <link rel="stylesheet" href="projeto/projeto.css">
+  <link rel="icon" type="image/png" href="projeto/img/Logo.titulo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+  <nav class="navbar">
+   <a href="Home/index.html" class="logo">
+      <img src="Home/img/Logo.png" class="logo-tipo" alt="Logo Bellor">
+    </a>
+
+<ul class="nav-links" id="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/reserva2">Reserva</a></li>
+    <li><a href="/menu2">Menu</a></li>
+    <li><a href="/projeto">Projeto</a></li>
+    <li><a href="/avaliacao">Avaliação</a></li>
+    <li><a href="/sobre">Sobre nós</a></li>
+</ul>
+
+    <div class="right-section">
+     <a href="Pagina-login/login.html" class="login">
+      <img src="Pagina-login/img/user.png" class="login" alt="Login">
+      </a>
+      <label class="switch">
+        <input type="checkbox" id="modo-btn">
+        <span class="slider"></span>
+      </label>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </nav>
+</header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="container">
+
+      <section class="intro-section">
+        <p>
+          Nosso projeto nasceu com o objetivo de unir boa comida e solidariedade.<br>
+          Através de nossa rede de restaurantes, buscamos criar um impacto positivo, oferecendo refeições de qualidade e oportunidades para quem mais precisa.
+        </p>
+      </section>
+<section class="image-section">
+        <div class="expandable-image-container">
+          <img src="projeto/img/marmita.jpeg" alt="Projeto Social Bellor" class="expandable-image">
+        </div>
+      </section>
+      <section class="text-block">
+        <h2>Por que o projeto surgiu?</h2>
+        <p>
+          A ideia surgiu durante o aumento da insegurança alimentar nas grandes cidades.<br>
+          Muitos restaurantes da nossa rede buscavam uma forma de contribuir com a sociedade, e percebemos que nossos clientes também tinham esse desejo de ajudar.<br>
+          Assim, criamos um sistema simples e transparente de doações.
+        </p>
+      </section>
+
+      <section class="text-block">
+        <h2>Como o projeto funciona</h2>
+        <p>
+          Ao realizar uma doação, o cliente recebe automaticamente um desconto especial que pode ser usado em nossa rede, em qualquer momento.<br>
+          O valor arrecadado é convertido em marmitas e distribuído para pessoas em situação de rua, garantindo que cada contribuição se transforme em um prato de comida quente e digno.
+        </p>
+      </section>
+
+      <section class="text-block">
+        <h2>Faça parte dessa corrente do bem</h2>
+        <p>Sua doação faz a diferença.</p>
+      </section>
+
+      <!-- CARD DE DOAÇÃO -->
+      <div class="donation-card">
+        <h1>Faça sua doação</h1>
+
+        <div class="accordion" id="donation-accordion">
+          <!-- Itens injetados pelo JS -->
+        </div>
+
+        <a href="doacaocliente.html" class="btn-donate">Quero Doar</a>
+      </div>
+
+    </div>
+  </main>
+
+  
+    <!-- RODAPÉ -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <a href="Home/index.html" class="footer-logo">
+        <img src="Home/img/Logo grande.png" alt="Logo Bellor">
+      </a>
+      <p><a href="mailto:restaurantes@bellor.com.br">restaurantes@bellor.com.br</a></p>
+      <p><a href="tel:+5577998793159">(77) 99879-3159</a></p>
+      <div class="social-icons">
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="img/logo-instagram.png" alt="Instagram">
+  </a>
+  <a href="https://x.com" target="_blank">
+    <img src="img/logo-twitter.png" alt="Twitter">
+  </a>
+  <a href="https://www.facebook.com" target="_blank">
+    <img src="img/logo-facebook.png" alt="Facebook">
+  </a>
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Páginas</h4>
+      <ul>
+   <li><a href="Home/index.html">Home</a></li>
+    <li><a href="Reservas/reservas.html">Reservas</a></li>
+    <li><a href="../Menu/menu.php">Menu</a></li>
+    <li><a href="projeto/projeto.html">Projeto</a></li>
+    <li><a href="Avaliação/avaliacoes.html">Avaliações</a></li>
+    <li><a href="sobre-nos/sobre.html">Sobre nós</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Localizações</h4>
+      <ul>
+        <li><a href="#">Guanambi - BA</a></li>
+        <li><a href="#">Salvador - BA</a></li>
+        <li><a href="#">Fortaleza - CE</a></li>
+        <li><a href="#">São Paulo - SP</a></li>
+        <li><a href="#">Rio de Janeiro - RJ</a></li>
+        <li><a href="#">Belo Horizonte - MG</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Atendimento</h4>
+      <ul>
+        <li><a href="../Menu/menu.php">Faça seu pedido</a></li>
+        <li><a href="Reservas/reservas.html">Faça sua reserva</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Bellor Restaurante. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+  <!-- SCRIPTS -->
+  <script src="projeto/projeto.js"></script>
+</body>
+</html>

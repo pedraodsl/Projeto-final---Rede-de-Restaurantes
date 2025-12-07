@@ -1,0 +1,127 @@
+:root {
+  --gold: #c9a96c;
+  --red: #680505;
+  --bege: #f5d8b0;
+  --dark: #1a1a1a;
+}
+
+/* ====================== CONTEÚDO ====================== */
+main.avaliacoes-page { 
+  margin-top:90px; 
+  padding:2rem 5%; 
+  max-width:1000px; 
+  margin-left:auto; 
+  margin-right:auto; 
+}
+
+.container h1 { 
+  font-size:3rem; 
+  color:var(--red); 
+  text-align:center; 
+  margin-bottom:0.5rem; 
+}
+.container > p { 
+  text-align:center; 
+  color:#666; 
+  font-size:1.2rem; 
+  margin-bottom:2rem; 
+}
+
+/* Card do prato */
+.prato-card {
+  background:white; 
+  padding:1.5rem; 
+  border-radius:16px; 
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+  display:flex; 
+  align-items:center; 
+  gap:1.5rem; 
+  margin-bottom:2rem; 
+  flex-wrap:wrap;
+}
+body.dark-mode .prato-card { background:#1a1a1a; }
+.prato-img { 
+  width:120px; 
+  height:120px; 
+  object-fit:cover; 
+  border-radius:12px; 
+}
+.prato-info h2 { color:var(--red); margin:0; }
+.prato-info p { color:#777; font-size:0.95rem; }
+.nota-media { margin-left:auto; text-align:center; }
+.nota-media .estrelas { font-size:2rem; color:#f39c12; }
+.nota-media strong { display:block; font-size:1.8rem; color:var(--gold); }
+
+/* Formulário */
+.form-avaliacao {
+  background:var(--bege); 
+  padding:2rem; 
+  border-radius:16px; 
+  margin-bottom:3rem; 
+  text-align:center;
+}
+body.dark-mode .form-avaliacao { background:#2a2a2a; }
+.form-avaliacao h3 { color:var(--red); margin-bottom:1rem; font-size:1.6rem; }
+
+.estrelas-container {
+  font-size:3rem; 
+  cursor:pointer; 
+  margin:1.5rem 0; 
+  letter-spacing:8px;
+}
+.estrela { transition:0.3s; color:#ccc; }
+.estrela.preenchida, .estrela:hover { color:#f39c12; }
+
+#nome-cliente, #comentario {
+  width:100%; 
+  padding:14px; 
+  border-radius:10px; 
+  border:1px solid #ccc; 
+  margin:12px 0; 
+  font-family:inherit;
+}
+#comentario { height:120px; resize:none; }
+
+#enviar-avaliacao {
+  background:var(--red); 
+  color:white; 
+  padding:14px 40px; 
+  border:none; 
+  border-radius:50px;
+  font-size:1.1rem; 
+  font-weight:bold; 
+  cursor:pointer; 
+  transition:0.3s;
+}
+#enviar-avaliacao:hover { background:#8b0000; transform:scale(1.05); }
+
+/* Lista de avaliações */
+.lista-avaliacoes h3 { 
+  color:var(--red); 
+  text-align:center; 
+  margin:3rem 0 2rem; 
+  font-size:2rem; 
+}
+
+.avaliacao-item {
+  background:white; 
+  padding:1.5rem; 
+  border-radius:16px; 
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+  display:flex; 
+  gap:1rem; 
+  margin-bottom:1.5rem; 
+  align-items:flex-start;
+}
+body.dark-mode .avaliacao-item { background:#1a1a1a; }
+.foto-perfil { width:50px; height:50px; border-radius:50%; object-fit:cover; }
+.avaliacao-conteudo h4 { margin:0; color:var(--gold); font-size:1.1rem; }
+.avaliacao-conteudo .estrelas { color:#f39c12; font-size:1.3rem; margin:5px 0; }
+.avaliacao-conteudo p { margin:8px 0 0; font-style:italic; color:#555; }
+body.dark-mode .avaliacao-conteudo p { color:#aaa; }
+
+/* ====================== RESPONSIVO ====================== */
+@media (max-width: 968px) {
+  .prato-card { flex-direction:column; text-align:center; }
+  .nota-media { margin:1rem auto 0; }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bellor Restaurante | Reservas</title>
+  <link rel="stylesheet" href="reservas/reservas.css">
+  <link rel="icon" type="image/png" href="reservas/img/Logo.titulo.png">
+  <link rel="stylesheet" href="cabecalho.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+  <nav class="navbar">
+   <a href="Home/index.html" class="logo">
+      <img src="Home/img/Logo.png" class="logo-tipo" alt="Logo Bellor">
+    </a>
+
+<ul class="nav-links" id="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/reserva2">Reserva</a></li>
+    <li><a href="/menu2">Menu</a></li>
+    <li><a href="/projeto">Projeto</a></li>
+    <li><a href="/avaliacao">Avaliação</a></li>
+    <li><a href="/sobre">Sobre nós</a></li>
+</ul>
+
+    <div class="right-section">
+     <a href="Pagina-login/login.html" class="login">
+      <img src="Pagina-login/img/user.png" class="login" alt="Login">
+      </a>
+      <label class="switch">
+        <input type="checkbox" id="modo-btn">
+        <span class="slider"></span>
+      </label>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </nav>
+</header>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <section class="reserva-section">
+      <div class="container">
+        <div class="reserva-header">
+          <h1>Faça sua reserva na Bellor</h1>
+          <p>Garanta sua experiência exclusiva conosco</p>
+        </div>
+
+        <div class="reserva-card">
+          <form id="form-reserva" class="form-reserva" action="/reserva" method="POST">
+            <div class="form-group">
+              <label for="nome">Nome Completo *</label>
+              <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefone">Telefone *</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="data">Data *</label>
+                <input type="date" id="data" name="data" required>
+              </div>
+              <div class="form-group">
+                <label for="horario">Horário *</label>
+                <input type="time" id="horario" name="hora" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="localizacao">Localização *</label>
+                <select id="localizacao" required>
+                  <option value="">Selecione a unidade</option>
+                  <option value="guanambi">Guanambi - BA</option>
+                  <option value="salvador">Salvador - BA</option>
+                  <option value="fortaleza">Fortaleza - CE</option>
+                  <option value="sao-paulo">São Paulo - SP</option>
+                  <option value="rio-janeiro">Rio de Janeiro - RJ</option>
+                  <option value="belo-horizonte">Belo Horizonte - MG</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="pessoas">Número de Pessoas *</label>
+                <select id="pessoas" required>
+                  <option value="">Selecione</option>
+                  <option value="1">1 pessoa</option>
+                  <option value="2">2 pessoas</option>
+                  <option value="3">3 pessoas</option>
+                  <option value="4">4 pessoas</option>
+                  <option value="5">5 pessoas</option>
+                  <option value="6">6 pessoas</option>
+                  <option value="7">7 pessoas</option>
+                  <option value="8">8 pessoas</option>
+                  <option value="mais">Mais de 8 pessoas</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group" id="campo-mais-pessoas">
+              <label for="numeroExato">Quantas pessoas exatamente? *</label>
+              <input type="number" id="numeroExato" min="9" placeholder="Ex: 12">
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem (opcional)</label>
+              <textarea id="mensagem" rows="4" placeholder="Aniversário, alergias, pedido especial..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-reservar">Confirmar Reserva</button>
+          </form>
+
+          <div id="mensagem-sucesso" class="mensagem-sucesso">
+            <h3>Reserva realizada com sucesso!</h3>
+            <p>Em breve entraremos em contato para confirmar todos os detalhes.</p>
+            <p>Obrigado por escolher a Bellor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ 
+    <!-- RODAPÉ -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">
+        <img src="img/Logo grande.png" alt="Logo Bellor">
+      </a>
+      <p><a href="mailto:restaurantes@bellor.com.br">restaurantes@bellor.com.br</a></p>
+      <p><a href="tel:+5577998793159">(77) 99879-3159</a></p>
+      <div class="social-icons">
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="img/logo-instagram.png" alt="Instagram">
+  </a>
+  <a href="https://x.com" target="_blank">
+    <img src="img/logo-twitter.png" alt="Twitter">
+  </a>
+  <a href="https://www.facebook.com" target="_blank">
+    <img src="img/logo-facebook.png" alt="Facebook">
+  </a>
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Páginas</h4>
+      <ul>
+   <li><a href="Home/index.html">Home</a></li>
+    <li><a href="Reservas/reservas.html">Reservas</a></li>
+    <li><a href="Menu/menu.html">Menu</a></li>
+    <li><a href="projeto/projeto.html">Projeto</a></li>
+    <li><a href="Avaliação/avaliacoes.html">Avaliações</a></li>
+    <li><a href="sobre-nos/sobre.html">Sobre nós</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Localizações</h4>
+      <ul>
+        <li><a href="#">Guanambi - BA</a></li>
+        <li><a href="#">Salvador - BA</a></li>
+        <li><a href="#">Fortaleza - CE</a></li>
+        <li><a href="#">São Paulo - SP</a></li>
+        <li><a href="#">Rio de Janeiro - RJ</a></li>
+        <li><a href="#">Belo Horizonte - MG</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Atendimento</h4>
+      <ul>
+        <li><a href="Menu/menu.html">Faça seu pedido</a></li>
+        <li><a href="Reservas/reservas.html">Faça sua reserva</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Bellor Restaurante. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+  <script src="reservas/reservas.js"></script>
+</body>
+</html>

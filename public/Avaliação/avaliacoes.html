@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bellor Restaurante | Site Oficial</title>
+<link rel="stylesheet" href="cabecalho.css">
+<link rel="stylesheet" href="Avaliação/avaliacao.css">
+<link rel="icon" type="image/png" href="Avaliação/img/Logo.titulo.png">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+   <a href="Home/index.html" class="logo">
+      <img src="Home/img/Logo.png" class="logo-tipo" alt="Logo Bellor">
+    </a>
+
+<ul class="nav-links" id="nav-links">
+    <li><a href="Home/index.html">Home</a></li>
+    <form action="/reserva" method="POST" class="nav-links">
+        <button type="submit"  style=" position: fixed;
+     top: 0;
+     right: -300px;
+     height: 100vh;
+     width: 250px;
+     flex-direction: column;
+     background-color: var(--primary-bg);
+     align-items: flex-start;
+     justify-content: flex-start;
+     padding: 80px 20px 20px 20px;
+     gap: 20px;
+     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+     transition: right 0.6s ease;
+     z-index: 1500;">Reservas</button>
+    </form>
+    <li><a href="/menu2">Menu</a></li>
+    <li><a href="/projeto">Projeto</a></li>
+    <form action="/avaliacao" method="POST" class="nav-links">
+        <button type="submit" style=" position: fixed;
+     top: 0;
+     right: -300px;
+     height: 100vh;
+     width: 250px;
+     flex-direction: column;
+     background-color: var(--primary-bg);
+     align-items: flex-start;
+     justify-content: flex-start;
+     padding: 80px 20px 20px 20px;
+     gap: 20px;
+     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+     transition: right 0.6s ease;
+     z-index: 1500;">Avaliaçao</button>
+    </form>
+    <li><a href="/sobre">Sobre nós</a></li>
+</ul>
+
+    <div class="right-section">
+     <a href="Pagina-login/login.html" class="login">
+      <img src="Pagina-login/img/user.png" class="login" alt="Login">
+      </a>
+      <label class="switch">
+        <input type="checkbox" id="modo-btn">
+        <span class="slider"></span>
+      </label>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </nav>
+</header>
+
+<main class="avaliacoes-page">
+  <div class="container">
+    <h1>Avalie seu pedido</h1>
+    <p>Sua opinião ajuda a melhorar o Bellor todos os dias!</p>
+
+    <!-- PRATO DINÂMICO -->
+    <div class="prato-card">
+      <img id="prato-img" src="" alt="Prato" class="prato-img">
+      <div class="prato-info">
+        <h2 id="prato-nome">Carregando...</h2>
+        <p id="prato-detalhes">Carregando...</p>
+      </div>
+      <div class="nota-media">
+        <span class="estrelas" id="media-estrelas">★★★★★</span>
+        <strong id="media-nota">4.9</strong> (<span id="total-avaliacoes">127</span> avaliações)
+      </div>
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <div class="form-avaliacao">
+      <h3>Como foi sua experiência?</h3>
+      <div class="estrelas-container" id="estrelas-avaliar">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+      <input type="text" id="nome-cliente" placeholder="Seu nome (opcional)" maxlength="30">
+      <textarea id="comentario" placeholder="Conte-nos o que achou do prato, atendimento, ambiente..."></textarea>
+      <button id="enviar-avaliacao">Enviar Avaliação</button>
+    </div>
+
+    <!-- LISTA DE AVALIAÇÕES -->
+    <div class="lista-avaliacoes">
+      <h3>Avaliações dos clientes</h3>
+      <div id="avaliacoes-lista"></div>
+    </div>
+  </div>
+</main>
+
+    <!-- RODAPÉ -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <a href="Home/index.html" class="footer-logo">
+        <img src="Home/img/Logo grande.png" alt="Logo Bellor">
+      </a>
+      <p><a href="mailto:restaurantes@bellor.com.br">restaurantes@bellor.com.br</a></p>
+      <p><a href="tel:+5577998793159">(77) 99879-3159</a></p>
+      <div class="social-icons">
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="Home/img/logo-instagram.png" alt="Instagram">
+  </a>
+  <a href="https://x.com" target="_blank">
+    <img src="img/logo-twitter.png" alt="Twitter">
+  </a>
+  <a href="https://www.facebook.com" target="_blank">
+    <img src="img/logo-facebook.png" alt="Facebook">
+  </a>
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Páginas</h4>
+      <ul>
+   <li><a href="Home/index.html">Home</a></li>
+    <li><a href="Reservas/reservas.html">Reservas</a></li>
+    <li><a href="../Menu/menu.php">Menu</a></li>
+    <li><a href="projeto/projeto.html">Projeto</a></li>
+    <li><a href="Avaliação/avaliacoes.html">Avaliações</a></li>
+    <li><a href="sobre-nos/sobre.html">Sobre nós</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Localizações</h4>
+      <ul>
+        <li><a href="#">Guanambi - BA</a></li>
+        <li><a href="#">Salvador - BA</a></li>
+        <li><a href="#">Fortaleza - CE</a></li>
+        <li><a href="#">São Paulo - SP</a></li>
+        <li><a href="#">Rio de Janeiro - RJ</a></li>
+        <li><a href="#">Belo Horizonte - MG</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Atendimento</h4>
+      <ul>
+        <li><a href="../Menu/menu.php">Faça seu pedido</a></li>
+        <li><a href="Reservas/reservas.html">Faça sua reserva</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Bellor Restaurante. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="Avaliação/script.js"></script>
+</body>
+</html>

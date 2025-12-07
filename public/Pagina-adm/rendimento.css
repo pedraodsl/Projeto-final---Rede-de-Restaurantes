@@ -1,0 +1,122 @@
+/* rendM.css - Dashboard + Cabeçalho Perfeito */
+:root {
+  --gold: #c9a96c;
+  --red: #680505;
+  --dark-red:  --dark-red #950707;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Georgia', serif; background:#f8f9fa; color:#333; line-height:1.6; transition:0.4s; }
+body.dark-mode { background:#0f0f0f; color:#eee; }
+
+/* ===== CABEÇALHO ===== */
+header { 
+  position:fixed; top:0; left:0; right:0; 
+  background:rgba(255,255,255,0.95); backdrop-filter:blur(10px); 
+  z-index:1000; padding:1rem 5%; 
+  display:flex; align-items:center; justify-content:space-between; 
+  box-shadow:0 2px 15px rgba(0,0,0,0.1); 
+}
+body.dark-mode header { background:rgba(26,26,26,0.95); }
+
+.logo img { height:50px; }
+
+.nav-links { 
+  display:flex; gap:2rem; list-style:none; 
+}
+.nav-links a { 
+  text-decoration:none; color:#333; font-weight:600; transition:0.3s;
+}
+body.dark-mode .nav-links a { color:#eee; }
+.nav-links a.active, .nav-links a:hover { color:var(--gold); }
+
+.right-section { 
+  display:flex; align-items:center; gap:18px; height:50px; 
+}
+.right-section img { height:26px; width:auto; display:block; }
+
+/* Switch modo escuro */
+.switch { position:relative; display:inline-block; width:50px; height:26px; }
+.switch input { opacity:0; width:0; height:0; }
+.slider { 
+  position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; 
+  background:#ccc; transition:.4s; border-radius:34px; 
+}
+.slider:before { 
+  position:absolute; content:""; height:18px; width:18px; 
+  left:4px; bottom:4px; background:white; transition:.4s; border-radius:50%; 
+}
+input:checked + .slider { background:var(--gold); }
+input:checked + .slider:before { transform:translateX(24px); }
+
+.hamburger { 
+  display:none; font-size:1.8rem; background:none; border:none; 
+  cursor:pointer; color:#333; 
+}
+body.dark-mode .hamburger { color:#eee; }
+
+/* ===== DASHBOARD ===== */
+main.dashboard { margin-top:90px; padding:2rem 5%; max-width:1600px; margin-left:auto; margin-right:auto; }
+
+.header { text-align:center; margin-bottom:3rem; }
+.header h1 { font-size:3.2rem; color:var(--red); }
+.header .subtitle { font-size:1.3rem; color:#666; }
+
+.cards {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:2rem;
+  margin-bottom:3rem;
+}
+.card {
+  background:white; padding:2rem; border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  display:flex; align-items:center; gap:1.5rem;
+  transition:0.3s;
+}
+body.dark-mode .card { background:#1a1a1a; }
+.card:hover { transform:translateY(-8px); }
+
+.card-icon {
+  width:70px; height:70px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  color:white; font-size:1.8rem;
+}
+.card.today .card-icon { background:#e91e63; }
+.card.week .card-icon { background:#9c27b0; }
+.card.month .card-icon { background:var(--gold); color:#000; }
+
+.card-info h3 { margin:0; font-size:1.1rem; color:#555; }
+body.dark-mode .card-info h3 { color:#ccc; }
+.card-info .value { font-size:2.2rem; font-weight:bold; color:var(--red); margin:0.5rem 0; }
+.card-info small { color:#28a745; font-weight:bold; }
+
+.chart-container {
+  background:white; padding:2.5rem; border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1); margin:3rem 0;
+}
+body.dark-mode .chart-container { background:#1a1a1a; }
+.chart-container h2 { color:var(--red); text-align:center; margin-bottom:1.5rem; }
+
+.total-franquia {
+  text-align:center; background:linear-gradient(135deg, var(--red), var(--dark-red));
+  color:white; padding:3rem; border-radius:18px; margin:3rem 0;
+}
+.total-franquia h2 { font-size:2rem; margin-bottom:1rem; }
+.total-value { font-size:3.5rem; font-weight:bold; }
+.crescimento-anual { font-size:1.4rem; margin-top:1rem; }
+
+footer { text-align:center; padding:3rem; background:#111; color:#aaa; }
+body.dark-mode footer { background:#000; }
+
+/* Mobile */
+@media (max-width: 968px) {
+  .nav-links { 
+    position:fixed; top:0; right:-100%; width:300px; height:100vh;
+    background:#fff; flex-direction:column; padding-top:100px;
+    transition:0.4s; gap:2rem;
+  }
+  body.dark-mode .nav-links { background:#111; }
+  .nav-links.show { right:0; }
+  .hamburger { display:block; }
+}

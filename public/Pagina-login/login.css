@@ -1,0 +1,47 @@
+:root { --gold:#c9a96c; --red:#680505; --dark-red:#950707; --light:#fcf2e5; }
+
+/* Conteúdo */
+main { margin-top:90px; padding:2rem; display:flex; justify-content:center; }
+.container { background:white; max-width:440px; width:100%; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.15); overflow:hidden; }
+body.dark-mode .container { background:#1a1a1a; }
+.container h1 { text-align:center; padding:2rem 1rem 0.5rem; color:var(--red); font-size:2.4rem; }
+.container > p { text-align:center; color:#666; margin-bottom:2rem; }
+body.dark-mode .container > p { color:#aaa; }
+body {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+ url("fi-Twin-Tails.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tabs { display:flex; }
+.tab { flex:1; padding:1rem; background:#eee; border:none; font-weight:bold; cursor:pointer; }
+.tab.active { background:var(--gold); color:#000; }
+body.dark-mode .tab { background:#333; color:#eee; }
+
+.form-box { padding:2rem; display:none; }
+.form-box.active { display:block; }
+
+.input-group { margin-bottom:1.2rem; }
+.input-group label { display:block; margin-bottom:0.5rem; font-weight:600; }
+.input-group input { width:100%; padding:14px; border-radius:10px; border:1px solid #ddd; font-size:1rem; }
+body.dark-mode .input-group input { background:#222; border-color:#444; color:#eee; }
+
+.password-wrapper { position:relative; }
+.toggle-pass { position:absolute; right:14px; top:50%; transform:translateY(-50%); cursor:pointer; color:var(--red); font-size:0.9rem; }
+
+.error { color:#d32f2f; font-size:0.9rem; min-height:1.2rem; margin-top:0.5rem; }
+
+button[type="submit"] { width:100%; padding:14px; background:var(--red); color:white; border:none; border-radius:50px; font-size:1.1rem; font-weight:bold; cursor:pointer; margin-top:1rem; }
+button[type="submit"]:hover { background:var(--dark-red); }
+
+a { color:var(--gold); text-decoration:none; }
+a:hover { text-decoration:underline; }
+/* Responsivo */
+@media (max-width:968px) {
+  .nav-links { position:fixed; top:0; right:-100%; width:300px; height:100vh; background:white; flex-direction:column; padding-top:100px; transition:0.4s; gap:2rem; z-index:999; }
+  body.dark-mode .nav-links { background:#111; }
+  .nav-links.show { right:0; }
+  .hamburger { display:block; }
+}
